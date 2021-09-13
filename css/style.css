@@ -17,28 +17,22 @@ body {
 
 /* search box  hear */
 .search-field {
+  text-align: center;
   border: none;
   border-radius: 50px;
-  padding: 5px;
   outline: none;
 }
 .search-field:hover {
   outline: none;
   border: none;
 }
+
 .search-box {
-  border: 1px solid rgb(211, 45, 3);
   width: 400px;
   border-radius: 5px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 20px;
-  border-right: none;
-}
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 144px;
 }
 
 /* all products  */

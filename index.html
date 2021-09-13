@@ -35,22 +35,11 @@
     <main class="main">
       <!-- search box -->
       <div class="search-field">
-        <div class="search-box">
-          <input id="input-field" class="search-field" type="text" placeholder="Search for the favorite item" />
-          <button
-            type="submit"
-            class="btn btn-danger search-button"
-            data-toggle="button"
-            aria-pressed="false"
-            autocomplete="off"
-            id="search-btn"
-            onclick="loadProducts()"
-          >
-            Search
-          </button>
+        <div class="input-group search-box">
+          <input type="text" class="form-control input" placeholder="Search your favorite item" aria-describedby="basic-addon2" />
+          <span class="input-group-addon btn btn-danger button" id="search-btn" onclick="loadProducts()">Search</span>
         </div>
       </div>
-
       <!-- all products -->
       <div class="row">
         <div class="col-md-9 col-lg-9 col-sm-7">
