@@ -4,6 +4,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .header1 {
+  margin-left: 30px;
   font-weight: bold;
 }
 .first-letter {
@@ -21,7 +22,7 @@ body {
 }
 .search-box {
   border: 1px solid rgb(211, 45, 3);
-  width: 350px;
+  width: 400px;
   border-radius: 5px;
   margin: auto;
   margin-top: 30px;
@@ -31,7 +32,7 @@ body {
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 94px;
+  margin-left: 144px;
 }
 #all-products {
   display: grid;
