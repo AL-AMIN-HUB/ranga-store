@@ -6,14 +6,14 @@ const loadProducts = () => {
 };
 loadProducts();
 
-// show all product in UI 
+// show all product in UI
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product , bg-primary">
+    div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
       </div>
@@ -75,8 +75,6 @@ const updateTaxAndCharge = () => {
 
 //grandTotal update function
 const updateTotal = () => {
-  const grandTotal =
-    getInputValue("price") + getInputValue("delivery-charge") +
-    getInputValue("total-tax");
+  const grandTotal = getInputValue("price") + getInputValue("delivery-charge") + getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal;
 };
