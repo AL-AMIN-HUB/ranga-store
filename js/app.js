@@ -1,3 +1,4 @@
+// load products form api
 const loadProducts = () => {
   const url = `https://fakestoreapi.com/products/`;
   fetch(url)
@@ -28,6 +29,7 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+// update addToCart
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -71,7 +73,7 @@ const updateTaxAndCharge = () => {
     setInnerText("delivery-charge", 60);
     setInnerText("total-tax", priceConverted * 0.4);
   }
-
+  // grandTotal update function call
   updateTotal();
 };
 

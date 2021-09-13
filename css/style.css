@@ -1,8 +1,12 @@
+/* ---------------------------
+main body default styles 
+--------------------------*/
 body {
   background-color: #f5f5f5;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* header text style */
 .header1 {
   margin-left: 30px;
   font-weight: bold;
@@ -10,6 +14,8 @@ body {
 .first-letter {
   color: orange;
 }
+
+/* search box  hear */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -34,6 +40,8 @@ body {
   border-radius: 25px;
   margin-left: 144px;
 }
+
+/* all products  */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -43,6 +51,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* each product  */
 .single-product {
   background-color: rgba(0, 255, 255, 0.04);
   border-radius: 1rem;
@@ -51,6 +61,7 @@ body {
   padding: 10px;
   transition: 0.6s;
 }
+/* each product hover  */
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
@@ -64,10 +75,13 @@ body {
   color: rgb(141, 34, 34);
   font-weight: bold;
 }
+/* rating icon */
 .fa-star,
 .fa-star-half-alt {
   color: orange;
 }
+
+/* my cart styles */
 .cart {
   width: 350px;
   color: white;
@@ -81,6 +95,11 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+/*------------------------
+Responsive
+------------------*/
+/* Ipad */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -99,6 +118,7 @@ body {
     padding-right: 10px;
   }
 }
+/* For Mobile device */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
